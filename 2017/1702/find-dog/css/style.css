@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #171717;
+  box-sizing: border-box;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+li { list-style: none; }
+a { text-decoration: none; color: #171717;}
+a:hover { text-decoration: none; }
+.wrap {
+  width: 960px;
+  min-height: 500px;
+  margin: 0 auto;
+}
+header {
+  position: relative;
+  width: 100%;
+  padding-top: 30px;
+}
+header > .logo {
+  width: 230px;
+  height: 80px;
+  margin: 0 auto;
+}
+header > .logo > a {
+  display: inline-block;
+  width: 100%;
+  height: 80px;
+}
+header > .logo > a > p {
+  font-size: 34px;
+  font-weight: bold;
+  float: left;
+  line-height: 80px;
+  margin: 0;
+  margin-right: 20px;
+}
+nav {
+  width: 100%;
+  height: 40px;
+  margin-top: 40px;
+}
+nav > ul > li {
+  float: left;
+  width: 270px;
+  height: 40px;
+}
+nav > ul > li:first-child {
+  width: 240px;
+}
+nav > ul > li:last-child {
+  width: 180px;
+}
+nav > ul > li > a {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+nav > ul > li > .login {
+  width: 170px;
+  height: 40px;
+  padding: 2px 10px;
+}
+nav > ul > li > .login > p {
+  display: inline-block;
+  margin-right: 10px;
+}
+nav > ul > li a:hover, a:active {
+  color: #28a745;
+  transition: 0.5s;
+}
+.imgslide {
+  width: 940px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.imgslide > img {
+  position: absolute;
+  top: 0;
+  left: -100%;
+}
+.imgslide > img:first-child {
+  left: 0;
+}
+section {
+  width: 100%;
+}
+/* 
+.section-th > .phrase
+.parcel-out-view > article > .phrase
+*/
+.phrase {
+  color: #333333;
+  text-align: center;
+  margin: 80px 0;
+}
+.section-th > div {
+  width: 900px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.section-th > div > a {
+  width: 100%;
+}
+.section-th > article {
+  width: 290px;
+  height: 390px;
+  padding: 25px;
+  border: 1px solid #a6a6a6;
+  border-radius: 20px;
+  float: left;
+  margin: 0 15px;
+  margin-bottom: 30px;
+}
+.section-th > article > a {
+  display: inline-block;
+  width: 100%;
+  height: 340px;
+}
+.section-th > article > a > .animal-img {
+  height: 240px;
+  width: 240px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.section-th > article > a > p {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 25px 0;
+}
+/* 
+.section-th > article > a > .msg-icon
+.parcel-out-view > .comment > .msg-icon
+*/
+.msg-icon {
+  width: 100%;
+  height: 25px;
+  padding: 0 7.5px;
+}
+.msg-icon > i {
+  float: left;
+  font-size: 20px;
+  margin: 2.5px 10px 0 0;
+}
+.msg-icon > i.fa-heart {
+  color: red;
+}
+.msg-icon > span {
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+footer {
+  clear: both;
+  width: 100%;
+  height: 200px;
+  padding: 50px 260px;
+  border-top: 1.15px solid #171717;
+}
+footer > img {
+  float: left;
+  margin: 15px 30px 0 0;
+}
+footer > p {
+  font-size: 14px;
+  margin: 7.5px 0;
+}
+
+/* index.php */
+
+.section-log {
+  width: 100%;
+  min-height: 300px;
+  padding: 100px 0;
+}
+.section-log > .sign {
+  width: 400px;
+  padding: 15px 25px;
+  border: 4px solid #28a745;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.sign > h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.sign > form > label.control-label-id {
+  float: left;
+  margin: 20px 32px 12.5px 5px;
+}
+.sign > form > label.control-label-pw {
+  float: left;  
+  margin: 20px 17px 12.5px 5px;
+}
+.sign > form > input {
+  float: left;
+  width: 250px;
+  margin: 15px 0;
+}
+.sign > form > button {
+  width: 58px;
+  height: 35px;
+  line-height: 11.5px;
+  margin: 10px 0 10px 142px;
+}
+.sign > form > a {
+  color: #333333;
+  float: right;
+  border-bottom: 1px solid #333333;
+  margin: 15px;
+  font-size: 14px;
+}
+
+/* .sign */
+
+.section-log > .sign-in {
+  height: 290px;
+}
+
+/* sign-in.php */
+
+.section-log > .sign-up {
+  height: 430px;
+}
+.sign-up > form > label.control-label-mail {
+  float: left;      
+  margin: 20px 32px 12.5px 5px;
+}
+.sign-up > form > label.control-label-nb {
+  float: left;      
+  margin: 20px 45px 12.5px 5px;
+}
+
+/* sign-up.php */
+
+.view {
+  width: 100%;
+  min-height: 1000px;
+  padding: 100px 10px;
+}
+.view > .animal-name {
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+}
+.view > article {
+  width: 100%;
+  min-height: 500px;
+  margin: 100px 0;
+  padding: 70px;
+  border: 1px solid #a6a6a6;
+}
+.view > article > table {
+  width: 100%;
+  height: 180px;
+}
+.view > article > table tr > td {
+  border: 1px solid #23903c;
+  text-align: center;
+}
+.view > article > table tr > td:nth-child(odd) {
+  background-color: #28a745;
+  width: 20%;
+  color: #fff;
+  font-size: 15px;  
+}
+.view > article > table tr > td:nth-child(even) {
+  width: 30%;
+  font-size: 14px;
+}
+.view > article > .view-div {
+  width: 790px;
+  height: 590px;
+  margin: 0 auto;
+  margin-top: 70px;
+  overflow: hidden;
+}
+.view > .comment {
+  width: 100%;
+  min-height: 200px;
+}
+.view > .comment > form {
+  width: 100%;
+  height: 40px;
+  margin: 50px auto 35px auto;
+}
+.view > .comment > form > .form-group {
+  float: left;
+  width: 850px;
+  margin: 0 7.5px;
+}
+.view > .comment > form > button {
+  float: left;
+  width: 60px;
+  margin: 0 7.5px;  
+}
+.view > .comment > .comment-user {
+  width: 100%;
+  min-height: 50px;
+  padding: 15px 10px;
+}
+.view > .comment > .comment-user > .user-name {
+  float: left;
+  margin: 2.5px 20px 10px 0;
+  font-size: 14px;    
+  font-weight: bold;
+}
+.view > .comment > .comment-user > .user-time {
+  display: inline-block;
+  margin-bottom: 15px;    
+  font-size: 13.5px;
+  color: #4f4f4f;    
+}
+.view > .comment > .comment-user > .user-com {
+  margin: 0;
+  color: #2f2f2f;
+}
+
+/* view.php */
+
+.view > article > .parcel-out-table {
+  height: 135px;
+}
+
+/* protect-view.php */
+
+.write {
+  width: 100%;
+  min-height: 800px;
+  padding: 100px 10px;
+}
+.write > h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 50px;
+}
+.write > form > article {
+  width: 430px;
+  height: 500px;
+  margin: 0 20px;
+  padding: 30px;
+  border: 4px solid #28a745;
+  border-radius: 20px;
+  float: left;
+}
+.write > form > div {
+  width: 100%;
+  height: 105px;
+  padding: 50px 412.5px 0 412.5px;
+  clear: both;
+}
+.write > form > div > button {
+  width: 115px;
+  height: 55px;
+  font-size: 17.5px;
+  border-radius: 8px;
+}
+.write > form > article > .form-group {
+  width: 100%;
+  height: 60px;
+  margin: 0;
+}
+.write > form > article:nth-child(1) > .write-etc {
+  width: 260px;
+  height: 300px;
+  border: 1px solid #a6a6a6;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.write > form > article:nth-child(1) > .write-etc > p {
+  text-align: center;
+  margin-bottom: 17.5px;
+}
+.write > form > article:nth-child(1) > .write-etc > .write-etc-div {
+  width: 175px;
+  height: 175px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #bfbfbf;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 175px;
+}
+.write > form > article > .form-group > label {
+  float: left;
+  margin: 18px 0;
+}
+.write > form > article:nth-child(1) > .form-group:nth-child(2) > label { margin-right: 52px; }
+.write > form > article:nth-child(1) > .form-group:nth-child(3) > label { margin-right: 100px; }
+.write > form > article:nth-child(2) > .form-group:nth-child(1) > label { margin-right: 22px; }
+.write > form > article:nth-child(2) > .form-group:nth-child(2) > label { margin-right: 60px; }
+.write > form > article:nth-child(2) > .form-group:nth-child(3) > label { margin-right: 60px; }
+.write > form > article:nth-child(2) > .form-group:nth-child(4) > label { margin-right: 31px; }
+.write > form > article:nth-child(2) > .form-group:nth-child(5) > label { margin-right: 31px; }
+.write > form > article:nth-child(2) > .form-group:nth-child(6) > label { margin-right: 31px; }
+.write > form > article:nth-child(2) > .form-group:nth-child(7) > label { margin-right: 31px; }
+.write > form > article:nth-child(1) > .form-group > input {
+  float: left;
+  width: 205px;
+  margin: 15px 0;
+}
+.write > form > article:nth-child(2) > .form-group > input {
+  float: left;
+  width: 260px;
+  margin: 11px 0;
+}
+.write > form > article > .form-group:nth-child(6) > input:nth-child(3) {
+  margin-right: 16px;
+  margin-left: 16px;  
+}
+.write > form > article > .form-group > textarea {
+  float: left;
+  width: 260px;
+  margin: 10px 0;
+}
+.write > form > article > .form-group > input.pnumber {
+  width: 75px;
+}
+
+/* write.php */
