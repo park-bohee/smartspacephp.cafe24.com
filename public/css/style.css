@@ -16,17 +16,18 @@ h1 {
   text-align: center;
 }
 nav {
-  width: 100%;
-  min-height: 550px;
+  float: left;
+  width: 200px;
+  min-height: 400px;
+  margin-top: 50px;
 }
 nav ul {
-  float: left;
   width: 200px;
 }
 nav ul h3 {
   font-weight: bold;
   text-align: center;
-  margin: 50px 0 40px 0;
+  margin-bottom: 40px;
 }
 nav ul li {
   width: 200px;
