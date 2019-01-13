@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 30px 50px;
+}
+header {
+  width: 100%;
+  height: 65px;
+  margin-bottom: 30px;
+}
+header > .logo {
+  width: 360px;
+  height: 65px;
+  float: left;
+  margin-left: 20px;
+}
+header > .logo > h1 {
+  font-size: 50px;
+  float: left;
+}
+header > .logo > img {
+  float: right;
+}
+nav {
+  width: 300px;
+  height: 60px;
+  float: right;
+  padding: 12.5px 0;
+}
+nav input.form-control {
+  width: 240px;
+  float: left;
+}
+nav > button {
+  float: left;
+}
+section {
+  width: 100%;
+  height: calc(100% - 110px);
+}
+article {
+  width: calc(100% - 340px);
+  height: 100%;
+  float: left;
+}
+article > #map {
+  width: 100%;
+  height: 100%;
+}
+aside {
+  width: 300px;
+  height: 100%;
+  float: right;
+}
+aside > #bus_pos {
+  width: 300px;
+  height: 100%;
+  padding: 10px 25px;
+  border: 5px solid #28a745;
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+/* map.js */
+#content > h5 {
+  margin: 15px 0;
+  text-align: center;
+}
+.buses {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+  position: relative;
+  cursor: pointer;
+}
+.buses > img {
+  width: 100px;
+}
+.buses > h5 {
+  position: absolute;
+  bottom: 20px; right: 0;
+  display: inline-block;
+}
+#imgSize {
+  width: 25px;
+  height: 25px;
+}
+.bus_arr {
+  display: inline-block;
+  margin-right: 10px;
+}
