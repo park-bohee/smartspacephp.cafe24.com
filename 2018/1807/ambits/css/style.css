@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Rajdhani');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    width:100%;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    z-index: 999;
+    border-bottom: 1px solid#797979;
+}
+.nav{
+    width: 1040px;
+    height: 100px;
+    margin: auto;
+}
+header h1 a{
+    float: left;
+    color: #678eb4;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 37px;
+    letter-spacing: 4px;
+    line-height: 90px;
+    margin-right: 440px;
+}
+header ul li{
+    width:100px;
+    height: 120px;
+    float: left;
+}
+header ul li a{
+    line-height: 100px;
+    display: block;
+    color: #678eb4;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 608px;
+    background-color: black;
+    position: relative;
+    top: 100px;
+}
+.main_img{
+    width: 1000px;
+    margin: auto;
+}
+.main_img img{
+    float: left;
+}
+.main_img h1{
+    margin-top: 130px;
+    width: 400px;
+    color: #fff;
+    font-size: 86px;
+    font-family: 'Oswald', sans-serif;
+    float: left;
+    margin-left: 10px;
+}
+.main_img a{
+    width:120px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    color: #dff6fc;
+    background-color: #4aa3db;
+    font-family: 'Oswald', sans-serif;
+    line-height: 40px;
+    font-size: 14px;
+    margin-top: 30px;
+    opacity: .8;
+    transition:.3s;
+    margin-left: 10px;
+}
+.main_img a:hover{
+    background-color: #496c81;
+}
+
+.main_2{
+    width: 100%;
+    height: 608px;
+    position: relative;
+    top: 100px;
+}
+.main_2 img{
+    float: left;
+}
+.text{
+    width:700px;
+    height: 500px;
+    margin: 160px 0px 0px 300px;
+    float: left;
+}
+.text p{
+    text-align: center;
+    font-size: 13px;
+}
+.text a{
+    position: relative;
+    left: 300px;
+    width:120px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    color: #dff6fc;
+    background-color: #4aa3db;
+    font-family: 'Oswald', sans-serif;
+    line-height: 40px;
+    font-size: 14px;
+    margin-top: 30px;
+    opacity: .8;
+    transition:.3s;
+}
+.text a:hover{
+    background-color: #496c81;
+}
+.box{
+    width:1900px;
+    margin: auto;
+}
+.main_3{
+    float: left;
+    position: relative;
+    top: 100px;
+    width:100%;
+    height: 1004px;
+    background-image: url("../img/pattern.png");
+}
+#product{
+  font-size: 86px;  
+}
+.main_3 h1{
+    font-size: 96px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
+.video {
+    padding: 70px 0px 30px 0px;
+   display: block;
+   margin: auto;
+}
+.video_under{
+    width: 1200px;
+    height: 200px;
+    margin: auto;
+}
+.video_under > p{
+    width:340px;
+    height: 100px;
+    float: left;
+    margin-left: 40px;
+    color: #b9b9b9;
+}
+#text_head{
+    font-size: 19px;
+}
+.video_under p > img{
+    margin-right: 20px;
+    float: left;
+}
+.footer{
+    width: 100%;
+    height: 60px;
+    float: left;
+    position: relative;
+    top: 100px;
+    background-color: black;
+}
+.footer > p{
+    color: #fff;
+    line-height: 60px;
+    float: left;
+    margin: 0px 600px 0px 400px;
+}
+.footer > a{
+    width:32px;
+    height: 60px;
+    line-height: 70px;
+    margin-left: 10px;
+}
