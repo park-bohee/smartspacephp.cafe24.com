@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+.img {
+  position: relative;
+  background-image: url(../img/plane.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+.img-cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.img .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+.content p {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 30px;
+}
+.button {
+  margin: auto 0;
+  width: 100px;
+  background-color: #fabdca;
+  border: none;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 22px;
+}
