@@ -1,0 +1,40 @@
+*{margin: 0;padding: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none;color: #222328;}
+html,body{width: 100%;height: 100%;}
+#wrap{width: 1000px;height: 650px;background:#ffffff;margin: 0 auto;}
+#header{width: 1000px;height: 200px;float: left; }
+#logo>a>img{width: 200px;height: 40px; background-color: pink;}
+.menu{width: 1000px;height: 200px;margin: 0 auto;margin-top: 30px;}
+.menu>li{width: 200px;float: left;text-align: center;line-height: 50px;height: 50px;list-style: none; float: left;}
+.sub_menu>li{overflow: hidden;height: 0;}
+.menu>li:hover>.sub_menu>li{height: 50px;transition: 1s;}
+.menu>li:hover{height: auto;transition: 1s;}
+.menu>li:hover{background: green;}
+.sub_menu>li:hover{background: aqua;}
+/*header*/
+#box{width: 800px;height: 350px;position: relative;float: left;overflow: hidden;}
+#box div{width: 100%;height: 100%;position: absolute;opacity: 0;}
+#box div:nth-child(1){opacity: 1;}
+#box div img{width: 800px;height: 350px; z-index: 99;}
+#box>div>p{position: absolute;margin-top: -190px;margin-left: 70px;color: white;font-size: 30px;z-index: 99;}
+/*slide_box*/
+#contents{width: 800px;height: 200px;float: left;}
+#partner>li{float: left;width: 33.33%;height: 200px;}
+#partner>li>img{width: 100%;height: 100%;}
+#gallery>ul>li{width:30.33%;height: 100px;float: left;margin-left: 7px;margin-top: 50px;}
+#gallery>ul>li>a>img{width: 100%;height: 100%;}
+#now>ul>li{width: 20%;height: 80px;float: left;margin-left: 13px;margin-top: 60px;}
+#notice{margin-top: 8px;}
+#notice>li{font-size: 10px;line-height: 45px;text-align: center;}
+#go>li>a>img{width: 250px;height: 100px;margin-top: -10px;}
+.title{line-height: 30px;}
+/*contents*/
+#footer{width: 800px;height: 100px;float: left;}
+#copyright{width: 75%;float: left;}
+#copyright>p{text-align: center;line-height: 100px;font-size: 20px;}
+#sns{width: 25%;height: 50px;float: left;}
+#family{width: 25%;height: 50px;float: left;}
+#sns>img{margin-left: 13px;margin-top: 7px;}
+#family>p{font-size: 11px;line-height: 50px;}
+/*footer*/
