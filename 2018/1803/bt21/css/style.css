@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+header {
+  width: 100%;
+  height: auto;
+  z-index: 9999;
+  position:fixed;
+}
+header img {
+  width: 90px;
+  height: 43px;
+  margin-top: 18px;
+  margin-left: 58px;
+}
+#main_img {
+  width: 100%;
+  height: 700px;
+  background: url(../img/main.jpg);
+  background-size: cover;
+  float: left;
+  margin-bottom: 50px;
+}
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+.menu {
+  margin-bottom: -62px;
+  margin-left: 170px;
+}
+h5 {
+  float: right;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+.menu li {
+  float: left;
+  font-size: 18px;
+  line-height: 75px;
+  padding: 0 25px;
+  display: block;
+}
+.menu li:hover {
+  text-decoration: underline;
+}
+table{
+  width: 1500px;
+  height: 150px;
+  border-top: 1px solid #444444;
+  border-collapse: collapse;
+  margin-left: 5%;
+}
+#meet {
+  margin-left:200px;
+}
+td {
+  vertical-align: top;
+  border-bottom: 1px solid #444444;
+  padding: 20px;
+}
+td img {
+  width: 80px;
+  height: 110px;
+  margin-left: 100px;
+}
+h4 {
+  margin-right: 150px;
+}
+#txt1, #txt2 {
+  margin-left: 100px;
+}
+#puzzle {
+  margin-left: 100px;
+}
+p {
+  color:gray;
+}
+footer {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+#img_list {
+  float: left;
+  margin-left: 90px;
+}
+footer img {
+  width: 23px;
+  height: 23px;
+}
+#instagram {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 2px;
+}
+#youtube {
+  width: 18px;
+  height: 23px;
+  margin-left: 4px;
+}
+#img_list p {
+  float: right;
+  margin-left: 1180px;
+}
