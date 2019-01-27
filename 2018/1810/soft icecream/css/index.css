@@ -1,0 +1,206 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.title{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-family: 'Oswald', sans-serif;
+}
+.nav{
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff79a;
+  z-index: 999;
+
+}
+.nav .clickmenu{
+  width: 400px;
+  height: 150px;
+  position: fixed;
+  left: 0;
+  font-family: 'Oswald', sans-serif;
+  margin-left: 30px;
+}
+.nav .clickmenu li a{
+  float: left;
+  color: black;
+  margin: 20px;
+  font-size: 23px;
+  margin-top: 60px;
+}
+.nav .clickmenu li a:hover{
+  color:pink;
+  transition: 1s;
+}
+.nav .main-title{
+  font-size: 60px;
+  color: black;
+  text-align: center;
+  width: 200px;
+  height: 150px;
+  line-height: 160px;
+  float: left;
+  margin-left: 860px;
+  font-family: 'Yellowtail', cursive;
+  font-family: 'Yesteryear', cursive;
+}
+.nav .clickicon{
+  width: 400px;
+  height: 150px;
+  position: fixed;
+  right: 0;
+}
+.nav .clickicon li{
+  float: left;
+  width: 70px;
+  height: 70px;
+  padding: 15px;
+  border-radius: 50%;
+  margin: 40px 10px 10px 10px;
+}
+.nav .clickicon li img{
+  width: 40px;
+  height: 40px;
+}
+.section{
+  width: 100%;
+  height: 2000px;
+  border-top: 1px solid #fff79a;
+}
+.section img{
+  width: 100%;
+  height: 1200px;
+}
+.section .sec-box {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 220px;
+}
+.section .sec-box p:first-child{
+  color: #fff;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+.section .sec-box p:nth-child(2){
+  color: #fff;
+  font-size: 109px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 150px;
+  font-family: 'Baloo Bhaijaan', cursive;
+}
+.section .sec-box p:nth-child(3){
+  padding: 10px 30px;
+  font-size: 50px;
+  border: 5px solid white;
+  text-align: center;
+  width: 250px;
+  margin: 0 auto;
+  font-family: 'Oswald', sans-serif;
+  color:black;
+}
+.section .sec-box p:nth-child(3):hover{
+  background-color: black;
+  color: white;
+  transition: 1s;
+  cursor: pointer;
+}
+.section .sec-pop{
+  width: 100%;
+  height: 500px;
+  margin-top: 480px;
+  position: relative;
+}
+.section .sec-pop img{
+  width: 1000px;
+  height: 700px;
+  float: left;
+}
+.section .sec-pop .sec-text{
+  width: 500px;
+  height: 400px;
+  float: right;
+  position: absolute;
+  top: 140px;
+  right: 300px;
+}
+.section .sec-pop .sec-text p:nth-child(1){
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+.section .sec-pop .sec-text p:nth-child(2){
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
+}
+.section .sec-pop .sec-text p:nth-child(3){
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 100px;
+  font-family: 'Oswald', sans-serif;
+  
+}
+.section .sec-pop .sec-text p:nth-child(4){
+  font-size: 40px;
+  border: 3px solid black;
+  font-family: 'Oswald', sans-serif;
+  width: 220px;
+  height: 80px;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  margin-bottom: 30px;
+  line-height: 65px;
+}
+.section .sec-pop .sec-text p:nth-child(4):hover {
+  background-color: black;
+  color: white;
+  transition: 1s;
+  cursor: pointer;
+}
+.marmu  img {
+  margin-top: -100px;
+}
+.marmu p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+}
+.marmuri > img{
+  margin-top: 20px;
+}
+.footer {
+  width: 100%;
+  height: 165px;
+  background-color:black;
+  margin-top: -4px;
+}
+.footer p {
+  line-height: 25px;
+  font-size: 25px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  float: left;
+  margin: 70px;
+  position: relative;
+  left: 300px;;
+}
