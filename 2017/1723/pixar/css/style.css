@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 15vh;
+}
+header #header_icon{
+    position: absolute;
+    top: 3%;
+}
+#header_span_box{
+    width: 900px;
+    left: 70%;
+    position: absolute;
+    top: 7.5%;
+    transform: translate(-50%, -50%);
+}
+#header_span_box span{
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    padding: 0px 20px 0px 0px;
+    cursor: pointer;
+    font-weight: 600;
+}
+#header_span_box span:hover{
+    color: gray;
+}
+#menu{
+    height: 30px;
+    width: 30px;
+    float: right;
+    display: none;
+}
+.menu_bar{
+    width: 28px;
+    height: 3px;
+    margin-bottom: 1px;
+    background-color:black;
+}
+#one_box{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+#back_img_box{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    float: left;
+}
+#back_text_img_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 274px;
+}
+#back_img{
+    width: 100%;
+    height: 100%;
+}
+#back_text_img{
+    width: 100%;
+    height: 100%;
+}
+#three_img_box{
+    width: 100%;
+    height: 60vh;
+}
+#three_box{
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 150%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+}
+#tre_one_img_box{
+    position: absolute;
+    width: 100%;
+    height: 330px;
+}
+#tre_two_img_box{
+    position: absolute;
+    left: 29%;
+    width: 500px;
+    height: 330px;
+}
+#tre_tre_img_box{
+    position: absolute;
+    left: 57%;
+    width: 500px;
+    height: 330px;
+}
+.span_box{
+    position: absolute;
+    width: 300px;  
+    top: 50%;
+}
+#one_img_span{
+    left: 5%;
+}
+#two_img_span{
+    left: 29.5%;
+}
+#tre_img_span{
+    left: 64%;
+}
+#three_box span{
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: .20em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+}
+footer{
+    width: 100%;
+    height: 40vh;
+    float: left;
+}
+#font_box{
+    position: absolute;
+    top: 180%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+    height: 30px;
+}
+#font_box i{
+    font-size: 23px;
+    margin-right: 10px;
+}
+#footer_span_box{
+    position: absolute;
+    top: 192%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 400px;
+    text-align: center;
+}
+#footer_span_box span:nth-child(1){
+    border-right: 0.8px solid gray;
+}
+#footer_span_box span{
+    border-bottom: 0.8px solid gray;
+}
+#footer_span_box{
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: .20em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+}
+#footer_span_box span:nth-child(1):hover{
+    color: gray;
+    transition: 0.3s;
+}
+#footer_span_box span:nth-child(2):hover{
+    color: gray;
+    transition: 0.3s;
+}
+#font_box:hover i{
+    color: gray;
+    transition: 0.3s;
+}
+#font_box i:nth-child(1):hover{
+    transition: 0.3s;
+    color:black;
+}
+#font_box i:nth-child(2):hover{
+    transition: 0.3s;
+    color:black;
+}
+#font_box i:nth-child(3):hover{
+    transition: 0.3s;
+    color:black;
+}
+#font_box i:nth-child(4):hover{
+    transition: 0.3s;
+    color:black;
+}
+#copy{
+    position: absolute;
+    top: 195%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 520px){
+    header{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        z-index: 1;
+        background-color: #fff;
+    }
+}
+@media screen and (max-width: 520px) {
+	#header_icon{
+        position: relative;
+        top: 20%;
+		height: 95%;
+        width: 100px;
+    }
+}
+@media screen and (max-width: 520px) {
+    #header_span_box{
+        display: none;
+    }
+    #menu{
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        display: block;
+    }
+}
+@media screen and (max-width: 520px) {
+    #back_text_img_box{
+        width: 100%;
+        height: 20%;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media screen and (max-width: 520px) {
+    #back_img_box{
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        height: 40vh;
+        float: left;
+    }
+}
+@media screen and (min-width: 521px) and (max-width: 1024px){
+    #back_img_box{
+        width: 100%;
+        height: 60vh;
+    }
+}
+@media screen and (max-width: 521px){
+    #three_img_box{
+        float: left;
+        width: 100%;
+        height: 10vh;
+    }
+    #three_box{
+        left: 50%;
+        top: 100%;
+        float: left;
+        width: 100%;
+        height: 75vh;
+    }
+    #tre_one_img_box{
+        width: 90%;
+        height: 150px;
+        top: 0%;
+        left: 5%;
+    }
+    #tre_two_img_box{
+        width: 90%;
+        height: 150px;
+        top: 45%;
+        left: 5%;
+    }
+    #tre_tre_img_box{
+        width: 90%;
+        height: 150px;
+        top: 90%;
+        left: 5%;
+    }
+    .tre img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 521px){
+    .span_box{
+        position: absolute;
+        top: 37%;
+        left: 5%;
+    }
+    #one_img_span{
+        position: absolute;
+        left: 30%;
+    }
+    #two_img_span{
+        position: absolute;
+        left: 15%;
+        top: 81%;
+    }
+    #tre_img_span{
+        position: absolute;
+        left: 35%;
+        top: 127%;
+    }
+}
+@media screen and (max-width: 521px){
+    #copy{
+        position: absolute;
+        left: 63%;
+        width: 350px;
+    }
+}
