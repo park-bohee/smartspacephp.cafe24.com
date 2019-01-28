@@ -1,0 +1,475 @@
+@charset "EUC-KR";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.all {
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+}
+
+.headerimg {
+	width: 100%;
+	z-index: -10;
+	position: absolute;
+}
+
+.nav_top {
+    width: 100%;
+    height: 40px;
+}
+
+.nav_top ul {
+    list-style: none;
+    float: right;
+    padding-right: 50px;
+}
+
+.nav_top li {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 38px;
+    float: left;
+}
+
+.nav_top a {
+    text-decoration: none;
+    color: #808080;
+    font-size: 12px;
+}
+
+.nav_middle {
+    width: 100%;
+    height: 72px;
+    position: relative;
+}
+
+.nav_middle strong a {
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    top: 27px;
+    left: 200px;
+    font-size: 15px;
+}
+
+.nav_middle input {
+    width: 224px;
+    height: 36px;
+    background-color:#FAFAFA;
+    border: 0;
+    float: left;
+    padding-right: 30px;
+    border-radius: 5px;
+    position: absolute;
+    right: 180px;
+    top: 18px;
+}
+
+.nav_middle .bag {
+    width: 28px;
+    height: 35px;
+    position: absolute;
+    right: 140px;
+    top: 18px;
+}
+
+.main {
+    width: 100%;
+    height: 600px;
+    background-color:#FAFAFA;
+    position: relative;
+}
+
+.main a {
+    text-decoration: none;
+    color: white;
+}
+
+.mainimg1 img {
+    width: 670px;
+    height: 510px;
+    position: absolute;
+    top: 48px;
+    left: 50px;
+}
+
+.mainimg1 strong {
+    font-size: 30px;
+    position: absolute;
+    z-index: 1;
+    top: 460px;
+    left: 70px;
+}
+
+.mainimg1 p {
+    position: absolute;
+    z-index: 1;
+    top: 505px;
+    left: 70px;
+}
+
+.mainimg2 img {
+    width: 350px;
+    height: 510px;
+    position: absolute;
+    top: 48px;
+    left: 735px;
+}
+
+.mainimg2 strong {
+    position: absolute;
+    font-size: 25px;
+    z-index: 1;
+    top: 480px;
+    left: 750px;
+}
+
+.mainimg2 p {
+    position: absolute;
+    z-index: 1;
+    top: 515px;
+    left: 750px;
+}
+
+.mainimg3 img {
+    width: 380px;
+    height: 249px;
+    position: absolute;
+    top: 48px;
+    left: 1100px;
+}
+
+.mainimg3 strong {
+    position: absolute;
+    font-size: 20px;
+    z-index: 1;
+    top: 230px;
+    left: 1115px;
+}
+
+.mainimg3 p {
+    position: absolute;
+    z-index: 1;
+    top: 255px;
+    left: 1115px;
+}
+
+.mainimg4 img {
+    width: 380px;
+    height: 249px;
+    position: absolute;
+    top: 309px;
+    left: 1100px;
+}
+
+.mainimg4 strong {
+    position: absolute;
+    font-size: 20px;
+    top: 500px;
+    left: 1115px;
+}
+
+.mainimg4 p {
+    position: absolute;
+    z-index: 1;
+    top: 525px;
+    left: 1115px;
+}
+
+.main2 {
+    width: 100%;
+    height: 1100px;
+}
+
+.main2 h2 {
+    height: 100px;
+    padding-left: 150px;
+    line-height: 130px;
+    color: #2E2E2E;
+}
+
+.main2 ul {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.main2 ul li {
+    height: 500px;
+    float: left;
+    padding-left: 30px;
+    list-style: none;
+}
+
+.main2 ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main2 ul li p {
+    padding-top: 5px;
+    font-size: 13px;
+}
+
+.main2 ul li strong {
+    font-size: 18px;
+    color: #1C1C1C;
+}
+
+.main2 img {
+    width: 600px;
+    height: 400px;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #FAFAFA;
+    clear: both;
+}
+
+.footerleft {
+    width: 600px;
+    float: left;
+    padding-top: 30px;
+    padding-left: 130px;
+}
+
+.footerleft li {
+    list-style: none;
+    float: left;
+    font-size: 13px;
+    padding-right: 10px;
+    color: gray;
+}
+
+.footerright {
+    width: 700px;
+    float: right;
+    padding-top: 30px;
+}
+
+.footerright li {
+    height: 20px;
+    list-style: none;
+    font-size: 13px;
+    color: gray;
+}
+
+/* �α���, ȸ������ ȭ�� */
+.loginheader {
+    width: 100%;
+    height: 240px;
+    background-color: rgb(1, 214, 100);
+    position: relative;
+}
+
+.loginheader p {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: 50px;
+    left: 600px;
+    font-weight: bold;
+}
+
+.loginheader img {
+    width: 164px;
+    height: 82px;
+    position: absolute;
+    top: 170px;
+    left: 680px;
+}
+
+.logininput {
+    width: 100%;
+    height: 350px;
+}
+
+.logininput h2 {
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.logininput p {
+	font-size: 13px;
+	text-align: center;
+}
+
+.logininput p a {
+	color: #00b3ff;
+}
+
+.loginbox {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.loginbox input {
+    width: 380px;
+    height: 40px;
+    margin-left: 10px;
+    border: 0;
+    border-style: solid;
+    border-bottom-width:1px;
+    margin-top: 20px;
+}
+
+.loginbox button {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: rgb(1, 214, 100);
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+/* ��ǰ ȭ�� */
+.goodsview {
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+}
+
+.view1 {
+    width: 70%;
+    height: 800px;
+    float: left;
+}
+
+.view1 img{
+    width: 100%;
+    height: 800px;
+}
+
+.view2 {
+    width: 30%;
+    height: 800px;
+    float: left;
+}
+
+.view2 h2{
+    padding-top: 50px;
+}
+
+.view2 h4 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.view2 hr {
+    margin-bottom: 30px;
+}
+
+.view2 .minus {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid gray;
+    float: left;
+    font-size: 20px;
+}
+
+.view2 .number {
+    width: 260px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+}
+
+.view2 .plus {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid gray;
+    font-size: 20px;
+}
+
+.view2 form hr {
+    margin-top: 180px;
+}
+
+.totalview {
+    width: 100%;
+    height: 100px;
+    float: left;
+    padding-top: 20px;
+}
+
+.totalview .total {
+    width: 100px;
+    font-size: 30px;
+    border: 0;
+    float: left;
+}
+
+.totalview b {
+    font-size: 30px;
+    float: left;
+}
+
+.view2 button {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(1, 214, 100);
+    border: 0;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.title {
+    width: 100%;
+    height: 60px;
+}
+
+.title h2 {
+    text-align: center;
+    line-height: 60px;
+}
+
+.items {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.items li {
+    float: left;
+    width: 300px;
+}
+
+.items img {
+    width: 100%;
+}
+
+.i_box {
+    width: 100%;
+    height: 50px;
+}
+
+.i_box p, h3 {
+    color: black;
+}

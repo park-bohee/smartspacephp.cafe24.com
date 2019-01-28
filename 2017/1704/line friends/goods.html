@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LINEFRIENDS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="init();">
+  <div class="all">
+    <header>
+      <a href="index.html"><img class="headerimg" src="img/img_brownday.jpg"></a>
+      <div class="nav_top">
+        <ul>
+          <li><a href="login.html">로그인</a></li>
+          <li><a href="signup.html">회원가입</a></li>
+          <li><a href="#">주문/배송</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">매장안내</a></li>
+        </ul>
+      </div>
+      <div class="nav_middle">
+        <strong><a href="item.html">상품보기</a></strong>
+        <input type="text" placeholder="검색어를 입력해주세요" />
+        <a href="#"><img class="bag" src="img/bag.PNG" alt=""></a>
+      </div>
+    </header>
+    <div class="goodsview">
+      <div class="view1">
+        <img src="img/goodsimg.jpg" alt="">
+      </div>
+      <div class="view2">
+        <h2>레드 후드 브라운 앉은 인형(Jumbo)</h2>
+        <h4>69,000원</h4>
+        <hr>
+        <form name="form" method="get">
+          <input class="minus" type="button" value=" - " onclick="del();">
+          <input type="hidden" name="sell_price" value="69000">
+          <input class="number" type="text" name="amount" value="1" onchange="change();">
+          <input class="plus" type="button" value=" + " onclick="add();">
+          <hr>
+          <div class="totalview">
+            <p>총 상품금액</p> <input class="total" type="text" name="sum" readonly><b>원</b>
+          </div>
+          <br>
+        </form>
+        <button>장바구니</button>
+      </div>
+    </div>
+    <footer>
+      <ul class="footerleft">
+        <li>이용약관</li>
+        <li>개인정보처리방침</li>
+        <li>회사소개</li>
+        <li>제휴문의</li>
+      </ul>
+      <ul class="footerright">
+        <li>상호명 라인프렌즈 주식회사 | 사업자등록번호 726-87-00030</li>
+        <li>통신판매업신고번호 2017-서울용산-0174 | 대표 김성훈</li>
+        <li>주소 서울시 용산구 이태원로 200 라인프렌즈 5F | 호스팅제공자 라인프렌즈 주식회사</li>
+        <li>이메일 customercare@linefriends.com | 고객센터 1544-5921</li>
+      </ul>
+    </footer>
+  </div>
+</body>
+<script language="JavaScript">
+  var sell_price;
+  var amount;
+
+  function init() {
+    sell_price = document.form.sell_price.value;
+    amount = document.form.amount.value;
+    document.form.sum.value = sell_price;
+    change();
+  }
+
+  function add() {
+    hm = document.form.amount;
+    sum = document.form.sum;
+    hm.value++;
+
+    sum.value = parseInt(hm.value) * sell_price;
+  }
+
+  function del() {
+    hm = document.form.amount;
+    sum = document.form.sum;
+    if (hm.value > 1) {
+      hm.value--;
+      sum.value = parseInt(hm.value) * sell_price;
+    }
+  }
+
+  function change() {
+    hm = document.form.amount;
+    sum = document.form.sum;
+
+    if (hm.value < 0) {
+      hm.value = 0;
+    }
+    sum.value = parseInt(hm.value) * sell_price;
+  }
+</script>
+</html>
