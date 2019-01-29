@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seventeen</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  body{
+    width: 100%;
+    height: auto;
+  }
+
+  /* 메뉴입니다. - 공용*/
+  header{
+    width: 100%;
+    height: 80px;
+    background: white;
+  }
+  #main_header{
+    width: 1250px;
+    height: 80px;
+    margin: 0 auto;
+  }
+  #logo{
+    margin: 10px 20px;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(-90deg, #92A8D1 50%, #F7CAC9 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+  }
+  #menu{
+    float: right;
+    margin: 0px 20px;
+  }
+  #menu li{
+    margin: 25px 20px;
+    float: left;
+  }
+  #menu li a{
+    font-size: 25px;
+    color: black;
+  }
+  #menu li a:hover{
+    color: #92A8D1;
+  }
+
+  /* 메인입니다. */
+  #main{
+    width: 100%;
+    height: 900px;
+    background-image: url("images/home.jpg");
+    background-size: cover;
+  }
+  #center{
+    width: 1260px;
+    margin: 0 auto;
+  }
+  #icon{
+    position: absolute;
+    float: left;
+    bottom: 0px;
+  }
+  #icon li{
+    float: left;
+    margin: 0 20px;
+  }
+  #icon li a{
+    color: white;
+  }
+
+  /* 푸터입니다. */
+  footer{
+    width: 100%;
+    height: 140px;
+    padding: 30px 0;
+    background-color: rgb(54, 54, 54);
+  }
+  footer img{
+    display: block;
+    margin: 0 auto;
+  }
+  footer p{
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(199, 199, 199);
+  }
+</style>
+<body>
+    <header>
+      <div id="main_header">
+        <a href="index.html"><p id="logo">SEVENTEEN</p></a>
+          <ul id="menu">
+            <li><a href="profile.html">PROFILE</a></li>
+            <li><a href="discography.html">DISCOGRAPHY</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="video.html">VIDEO</a></li>
+            <li><a href="#">SCHEDULE</a></li>
+            <li><a href="#">NEWS</a></li>
+          </ul>
+      </div>
+    </header>
+    <div id="main">
+      <div id="center">
+        <ul id="icon">
+          <li><a href="http://cafe.daum.net/pledis-17" target="_blank"><i class="fas fa-heart fa-2x"></i> Fan Club</a></li>
+          <li><a href="https://www.facebook.com/seventeennews" target="_blank"><i class="fab fa-facebook-square fa-2x"></i> Facebook</a></li>
+          <li><a href="https://twitter.com/pledis_17" target="_blank"><i class="fab fa-twitter fa-2x"></i> Twitter</a></li>
+          <li><a href="https://www.youtube.com/user/pledis17" target="_blank"><i class="fab fa-youtube fa-2x"></i> Youtube</a></li>
+          <li><a href="https://www.instagram.com/saythename_17/" target="_blank"><i class="fab fa-instagram fa-2x"></i> Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <div id="footer_main">
+        <img src="images/logo_pledis.png" alt="플레디스">
+        <p>Copyright(c) 2017 PLEDIS ENTERTAINMENT. All rights reserved.</p>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Discography</title>
+  <link rel="shortcut icon" href="images/logo.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+  body {
+    width: 100%;
+    height: auto;
+    background-color: #92A8D1;
+  }
+  /* 메뉴입니다. - 공용*/
+  header {
+    width: 100%;
+    height: 80px;
+    background: white;
+  }
+  #main_header {
+    width: 1250px;
+    height: 80px;
+    margin: 0 auto;
+  }
+  #logo {
+    margin: 10px 20px;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(-90deg, #92A8D1 50%, #F7CAC9 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+  }
+  #menu {
+    float: right;
+    margin: 0px 20px;
+  }
+  #menu li {
+    margin: 25px 20px;
+    float: left;
+  }
+  #menu li a {
+    font-size: 25px;
+    color: black;
+  }
+  #menu li a:hover {
+    color: #F7CAC9;
+  }
+  /* 메인임. 틀만 고정 */
+  #main {
+    width: 1260px;
+    height: 2500px;
+    margin: 0 auto;
+  }
+  #svt {
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+  }
+  #svt p {
+    text-align: center;
+  }
+  #first {
+    font-size: 70px;
+    margin-bottom: 20px;
+  }
+  #second {
+    font-size: 20px;
+    margin-bottom: 100px;
+  }
+  #icon {
+    float: left;
+  }
+  #icon li {
+    float: left;
+    margin: 0 20px;
+  }
+  #icon li a {
+    color: black;
+  }
+  /* 내용부분 */
+  #contents {
+    width: 100%;
+    height: 2200px;
+    padding: 40px;
+    background: white;
+  }
+  #left {
+    float: left;
+    width: 455px;
+    height: 800px;
+  }
+  #album_pho {
+    width: 455px;
+    height: 455px;
+    margin-bottom: 30px;
+  }
+  #ablum_name {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 30px;
+  }
+  table tr th {
+    width: 100px;
+    text-align: left;
+    vertical-align: top;
+    color: rgb(139, 139, 139);
+    font-weight: normal;
+  }
+  table tr td {
+    text-align: left;
+    vertical-align: top;
+    color: rgb(109, 109, 109);
+  }
+  #home {
+    background-color: white;
+    color: #F7CAC9;
+    font-size: 20px;
+    border: 1px #F7CAC9 solid;
+    padding: 15px;
+    width: 455px;
+    margin-bottom: 30px;
+  }
+  #right {
+    float: right;
+    margin-left: 40px;
+    width: 685px;
+    height: 800px;
+  }
+  #album_intro {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  #album_intro_box {
+    border-top: 1px #CCCBCB solid;
+    padding: 30px 0;
+  }
+  #album_intro_box p:nth-child(1) {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  #album_intro_box p:nth-child(2) {
+    line-height: 170%;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: rgb(58, 58, 58);
+  }
+  #album_intro_box p:nth-child(3) {
+    line-height: 170%;
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: rgb(58, 58, 58);
+  }
+  #track {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  #track_list {
+    border-top: 1px #CCCBCB solid;
+    padding: 30px 0;
+    line-height: 170%;
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: rgb(58, 58, 58);
+  }
+  #other_album {
+    width: 1180px;
+    height: auto;
+    padding: 20px 0px;
+    float: left;
+  }
+  #discography {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  #discography_list li {
+    float: left;
+    width: 272.5px;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+  #discography_list li:nth-child(4n+2) {
+    margin: 0 30px;
+  }
+  #discography_list li:nth-child(4n+3) {
+    margin-right: 30px;
+  }
+  .album_pho_list {
+    width: 272.5px;
+    height: 272.5px;
+  }
+  .album_pho_list:hover {
+    transition-duration: 1s;
+    box-shadow: 2px 2px 2px 2px rgb(187, 187, 187);
+  }
+  .album_title {
+    color: rgb(70, 70, 70);
+    line-height: 170%;
+    margin-bottom: 7px;
+    text-align: left;
+  }
+  .album_title:hover {
+    color: #92A8D1;
+    transition-duration: 1s;
+  }
+  .date {
+    color: rgb(117, 117, 117);
+    text-align: left;
+    font-size: 14px;
+  }
+  /* 푸터입니다. */
+  footer {
+    width: 100%;
+    height: 140px;
+    padding: 30px 0;
+    margin-top: 40px;
+    background-color: rgb(54, 54, 54);
+  }
+  footer img {
+    display: block;
+    margin: 0 auto;
+  }
+  footer p {
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(199, 199, 199);
+  }
+</style>
+<body>
+  <header>
+    <div id="main_header">
+      <a href="index.html">
+        <p id="logo">SEVENTEEN</p>
+      </a>
+      <ul id="menu">
+        <li><a href="profile.html">PROFILE</a></li>
+        <li><a href="discography.html">DISCOGRAPHY</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="video.html">VIDEO</a></li>
+        <li><a href="#">SCHEDULE</a></li>
+        <li><a href="#">NEWS</a></li>
+      </ul>
+    </div>
+  </header>
+  <div id="main">
+    <div id="svt">
+      <p id="first">SEVENTEEN</p>
+      <p id="second">청량돌, 자체제작 아이돌 등의 수식어와 함께 국내외에서 대세돌로 입지를 굳힌 보이그룹 세븐틴</p>
+      <ul id="icon">
+        <li>
+          <a href="http://cafe.daum.net/pledis-17" target="_blank">
+            <i class="fas fa-heart fa-2x"></i> Fan Club
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/seventeennews" target="_blank">
+            <i class="fab fa-facebook-square fa-2x"></i> Facebook
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/pledis_17" target="_blank">
+            <i class="fab fa-twitter fa-2x"></i> Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/pledis17" target="_blank">
+            <i class="fab fa-youtube fa-2x"></i> Youtube
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/saythename_17/" target="_blank">
+            <i class="fab fa-instagram fa-2x"></iz> Instagram
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="contents">
+      <div id="left">
+        <img id="album_pho" src="images/album/home.jpg" alt="Album">
+        <p id="ablum_name">SEVENTEEN 6th Mini Album 'YOU MADE MY DAWN'</p>
+        <table>
+          <tr>
+            <th>아티스트</th>
+            <td>SEVENTEEN</td>
+          </tr>
+          <tr>
+            <th>발매</th>
+            <td>2019.01.21</td>
+          </tr>
+        </table>
+        <a href="Seventeen.html"><button id="home">홈으로</button></a>
+      </div>
+      <div id="right">
+        <p id="album_intro">앨범소개</p>
+        <div id="album_intro_box">
+          <p>세븐틴, 성숙해진 모습의 음악적 역량 담아낸 발매!</p>
+          <p>어둠 속에 있던 나에게 새벽을 만들어 준 너’라는 의미를 담은 세븐틴의 미니 6집 ‘YOU MADE MY DAWN’은 전작 미니 5집 ‘YOU MAKE MY DAY’가 가지고 있던 서사를
+            완성하는 앨범으로 전반적으로 멤버들이 작사, 작곡에 참여하며 진정성 있는 음악을 선보이는 것은 물론 탄탄하고 보다 깊이감 있는 앨범으로 탄생시켜냈으며 과감히 변화한 모습과 함께 그들의 무서운
+            성장세를 보여주고 있다. </p>
+          <p>타이틀곡 ‘Home’은 어둠 속을 밝혀주고 기분 좋은 낮을 선사했던 너에게 편안함을 느끼게 해주고 싶은 마음을 담아냈으며 좋아하는 상대에 대한 소중함을 애틋한 감성으로 표현, 서로가 서로에게
+            기댈 수 있는 존재로서 어떤 어려움이라도 이겨내려는 마음을 ‘집’에 비유해 풀어내어 따뜻한 가사와 섬세한 감정선으로 리스너들을 편안하게 만든다.</p>
+        </div>
+        <p id="track">트랙리스트</p>
+        <div id="track_list">
+          1. Good to Me<br>
+          2. Home *TITLE<br>
+          3. 포옹 / VOCAL team (우지, 정한, 조슈아, 도겸, 승관)<br>
+          4. 칠리 / HIPHOP team (에스쿱스, 원우, 민규, 버논)<br>
+          5. Shhh / PERFORMANCE team (호시, 준, 디에잇, 디노) <br>
+          6. 숨이 차
+        </div>
+      </div>
+      <div id="other_album">
+        <p id="discography">DISCOGRAPHY</p>
+        <ul id="discography_list">
+          <!-- 4개씩 정렬 -->
+          <li>
+            <a href="#">
+              <span>
+                <img class="album_pho_list" src="images/album/home.jpg" alt="home">
+                <p class="album_title">SEVENTEEN 6th Mini Album 'YOU MADE MY DAWN'</p>
+                <p class="date">2019.01.21</p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>
+                <img class="album_pho_list" src="images/album/어쩌나.jpg" alt="home">
+                <p class="album_title">SEVENTEEN 5th Mini Album 'YOU MAKE MY DAY'</p>
+                <p class="date">2018.07.16</p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>
+                <img class="album_pho_list" src="images/album/거침없이.jpg" alt="home">
+                <p class="album_title">부석순(SEVENTEEN) DIGITAL SINGLE '거침없이'</p>
+                <p class="date">2018.03.21</p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>
+                <img class="album_pho_list" src="images/album/고맙다.jpg" alt="home">
+                <p class="album_title">SEVENTEEN SPECIAL ALBUM 《DIRECTOR'S CUT》</p>
+                <p class="date">2018.02.05</p>
+              </span>
+            </a>
+          </li>
+          <!-- 4개씩 묶기 -->
+          <li>
+            <a href="#">
+              <span>
+                <img class="album_pho_list" src="images/album/박수.jpg" alt="home">
+                <p class="album_title">SEVENTEEN 2ND ALBUM 'TEEN, AGE'</p>
+                <p class="date">2017.11.06</p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>
+                <img class="album_pho_list" src="images/album/울고싶지않아.jpg" alt="home">
+                <p class="album_title">SEVENTEEN 4th Mini Album ‘Al1’</p>
+                <p class="date">2017.05.22</p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>
+                <img class="album_pho_list" src="images/album/붐붐.jpg" alt="home">
+                <p class="album_title">SEVENTEEN 3rd Mini Album ‘Going Seventeen’</p>
+                <p class="date">2016.12.05</p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>
+                <img class="album_pho_list" src="images/album/아주나이스.jpg" alt="home">
+                <p class="album_title">Love&Letter Repackage Album</p>
+                <p class="date">2016.07.04</p>
+              </span>
+            </a>
+          </li>
+          <!-- 4개씩 묶기 -->
+          <li>
+            <a href="#">
+              <span>
+                <img class="album_pho_list" src="images/album/예쁘다.jpg" alt="home">
+                <p class="album_title">SEVENTEEN 2ND ALBUM 'TEEN, AGE'</p>
+                <p class="date">2017.11.06</p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>
+                <img class="album_pho_list" src="images/album/Q&A.jpg" alt="home">
+                <p class="album_title">SEVENTEEN 4th Mini Album ‘Al1’</p>
+                <p class="date">2017.05.22</p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>
+                <img class="album_pho_list" src="images/album/만세.jpg" alt="home">
+                <p class="album_title">SEVENTEEN 3rd Mini Album ‘Going Seventeen’</p>
+                <p class="date">2016.12.05</p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>
+                <img class="album_pho_list" src="images/album/아낀다.jpg" alt="home">
+                <p class="album_title">Love&Letter Repackage Album</p>
+                <p class="date">2016.07.04</p>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div id="footer_main">
+      <img src="images/logo_pledis.png" alt="플레디스">
+      <p>Copyright(c) 2017 PLEDIS ENTERTAINMENT. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
