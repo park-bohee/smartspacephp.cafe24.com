@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Video</title>
+  <title>Gallery</title>
   <link rel="shortcut icon" href="images/logo.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -21,7 +21,7 @@
   body {
     width: 100%;
     height: auto;
-    background-color: #92A8D1;
+    background-color: #F7CAC9;
   }
 
   /* 메뉴입니다. - 공용*/
@@ -64,13 +64,13 @@
   }
 
   #menu li a:hover {
-    color: #F7CAC9;
+    color: #92A8D1;
   }
 
   /* 메인임. 틀만 고정 */
   #main {
     width: 1260px;
-    height: 2800px;
+    height: 2000px;
     margin: 0 auto;
   }
 
@@ -110,74 +110,39 @@
   /* 내용부분 */
   #contents {
     width: 100%;
-    height: 2500px;
+    height: 1600px;
     padding: 40px;
     background: white;
   }
 
-  #video {
+  #gallery {
     font-size: 40px;
     text-align: center;
     margin-bottom: 60px;
   }
 
-  iframe {
-    margin-bottom: 60px;
-  }
-
-  #mv_intro {
-    margin-bottom: 120px;
-  }
-
-  #video_date {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  #video_name {
-    font-size: 30px;
-    text-align: center;
-    font-weight: 600;
-  }
-
-  #mv_list li {
-    width: 380px;
-    height: 300px;
+  #photo_list_main li {
     float: left;
     margin-bottom: 20px;
   }
 
-  #mv_list li:nth-child(3n+2) {
+  #photo_list_main li:nth-child(4n+2) {
     margin: 0 20px;
   }
 
-  #mv_list li span img:hover {
+  #photo_list_main li:nth-child(4n+3) {
+    margin-right: 20px;
+  }
+
+  .photo_list {
+    width: 280px;
+    height: 280px;
+  }
+
+  #photo_list_main li img:hover {
     transition-duration: 1s;
-    box-shadow: 2px 2px 2px 2px rgb(187, 187, 187);
+    box-shadow: 2px 2px 2px 2px rgb(194, 194, 194);
   }
-
-  #mv_list li span img {
-    margin-bottom: 10px;
-  }
-
-  #mv_list span {
-    text-align: center;
-    color: rgb(146, 146, 146);
-  }
-
-  .mv_img {
-    width: 380px;
-    height: 220px;
-  }
-
-  .mv_date {}
-
-  .mv_name {
-    font-size: 18px;
-    font-weight: 600
-  }
-
 
   /* 푸터입니다. */
   footer {
@@ -199,6 +164,10 @@
     color: rgb(199, 199, 199);
   }
 </style>
+<script>
+
+</script>
+
 <body>
   <header>
     <div id="main_header">
@@ -231,124 +200,121 @@
       </ul>
     </div>
     <div id="contents">
-      <p id="video">VIDEO</p>
-      <iframe width="1180" height="600" src="https://www.youtube.com/embed/R9VDPMk5ls0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-      <div id="mv_intro">
-        <p id="video_date">2019.01.21</p>
-        <p id="video_name">SEVENTEEN(세븐틴) - Home</p>
-      </div>
-      <ul id="mv_list">
-        <!-- 셋씩 넣기 -->
+      <p id="gallery">GALLERY</p>
+      <ul id="photo_list_main">
+        <!-- 4씩 묶김 -->
         <li>
-          <a href="#">
+          <a href="">
             <span>
-              <img class="mv_img" src="images/musicvideo/home.jpg">
-              <p class="mv_date">2019.01.21</p>
-              <p class="mv_name">SEVENTEEN(세븐틴) - Home</p>
+              <img class="photo_list" src="images/home/단체.JPG" alt="사진">
             </span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="">
             <span>
-              <img class="mv_img" src="images/musicvideo/어쩌나.jpg">
-              <p class="mv_date">2018.07.16</p>
-              <p class="mv_name">SEVENTEEN(세븐틴) - 어쩌나</p>
+              <img class="photo_list" src="images/home/에스쿱스.jpg" alt="사진">
             </span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="">
             <span>
-              <img class="mv_img" src="images/musicvideo/거침없이.jpg">
-              <p class="mv_date">2018.03.21</p>
-              <p class="mv_name">부석순(SEVENTEEN) - 거침없이</p>
-            </span>
-          </a>
-        </li>
-        <!-- 셋씩 넣기 -->
-        <li>
-          <a href="#">
-            <span>
-              <img class="mv_img" src="images/musicvideo/고맙다.jpg">
-              <p class="mv_date">2018.02.05</p>
-              <p class="mv_name">SEVENTEEN(세븐틴) - 고맙다</p>
+              <img class="photo_list" src="images/home/정한.jpg" alt="사진">
             </span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="">
             <span>
-              <img class="mv_img" src="images/musicvideo/박수.jpg">
-              <p class="mv_date">2017.11.06</p>
-              <p class="mv_name">SEVENTEEN(세븐틴) - 박수</p>
+              <img class="photo_list" src="images/home/조슈아.jpg" alt="사진">
+            </span>
+          </a>
+        </li>
+        <!-- 4씩 묶김 -->
+        <li>
+          <a href="">
+            <span>
+              <img class="photo_list" src="images/home/준.jpg" alt="사진">
             </span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="">
             <span>
-              <img class="mv_img" src="images/musicvideo/울고싶지않아.jpg">
-              <p class="mv_date">2017.05.22</p>
-              <p class="mv_name">SEVENTEEN(세븐틴) - 울고싶지않아</p>
-            </span>
-          </a>
-        </li>
-        <!-- 셋씩 넣기 -->
-        <li>
-          <a href="#">
-            <span>
-              <img class="mv_img" src="images/musicvideo/붐붐.jpg">
-              <p class="mv_date">2016.12.04</p>
-              <p class="mv_name">SEVENTEEN(세븐틴) - 붐붐</p>
+              <img class="photo_list" src="images/home/호시.jpg" alt="사진">
             </span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="">
             <span>
-              <img class="mv_img" src="images/musicvideo/아주나이스.jpg">
-              <p class="mv_date">2016.07.03</p>
-              <p class="mv_name">SEVENTEEN(세븐틴) - 아주나이스</p>
+              <img class="photo_list" src="images/home/원우.jpg" alt="사진">
             </span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="">
             <span>
-              <img class="mv_img" src="images/musicvideo/예쁘다.png">
-              <p class="mv_date">2016.04.24</p>
-              <p class="mv_name">SEVENTEEN(세븐틴) - 예쁘다</p>
+              <img class="photo_list" src="images/home/우지.jpg" alt="사진">
             </span>
           </a>
         </li>
-        <!-- 셋씩 넣기 -->
+        <!-- 4씩 묶김 -->
         <li>
-          <a href="#">
+          <a href="">
             <span>
-              <img class="mv_img" src="images/musicvideo/Q&A.jpg">
-              <p class="mv_date">2015.12.03</p>
-              <p class="mv_name">SEVENTEEN, Ailee - Q&A</p>
+              <img class="photo_list" src="images/home/디에잇.jpg" alt="사진">
             </span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="">
             <span>
-              <img class="mv_img" src="images/musicvideo/만세.jpg">
-              <p class="mv_date">2015.09.09</p>
-              <p class="mv_name">SEVENTEEN(세븐틴) - 만세</p>
+              <img class="photo_list" src="images/home/민규.jpg" alt="사진">
             </span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="">
             <span>
-              <img class="mv_img" src="images/musicvideo/아낀다.png">
-              <p class="mv_date">2015.05.29</p>
-              <p class="mv_name">SEVENTEEN(세븐틴) - 아낀다</p>
+              <img class="photo_list" src="images/home/도겸.jpg" alt="사진">
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span>
+              <img class="photo_list" src="images/home/승관.jpg" alt="사진">
+            </span>
+          </a>
+        </li>
+        <!-- 4씩 묶김 -->
+        <li>
+          <a href="">
+            <span>
+              <img class="photo_list" src="images/home/버논.jpg" alt="사진">
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span>
+              <img class="photo_list" src="images/home/디노.jpg" alt="사진">
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span>
+              <img class="photo_list" src="images/home/에스쿱스2.jpg" alt="사진">
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span>
+              <img class="photo_list" src="images/home/정한2.jpg" alt="사진">
             </span>
           </a>
         </li>
