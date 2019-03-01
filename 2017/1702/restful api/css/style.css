@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  text-align: center;
+}
+.header h1 {
+  text-align: center;
+  margin: 50px 0 20px 0;
+}
+.header img.ftube {
+  position: absolute;
+  top: 25px;
+  right: 130px;
+  z-index: -5;
+  transform: scaleX(-1);
+  filter: "FlipH";
+}
+.header img.ltube {
+  position: absolute;
+  top: 25px;
+  left: 130px;
+  z-index: -5;
+}
+.list table thead tr th {
+  text-align: center;
+}
+.list table tbody tr td {
+  text-align: center;
+}
+.list table tbody tr td:nth-child(5) {
+  text-align: left;
+  padding-left: 30px;
+}
+.list table tbody tr td:last-child a {
+  font-size: 18px;
+  margin: 7.5px;
+}
+#write-box .btn-save, .btn-close {
+  float: right;
+}

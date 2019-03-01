@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>RESTful API</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/start/jquery-ui.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>jQuery.noConflict(); // $를 사용하지 않겠다( angular와 충돌 방지 )</script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+</head>
+<body>
+	<div class="container" ng-app="myApp">
+		<div class="header">
+			<img src="./img/littletube.JPG" alt="" width="250" class="ftube">
+			<h1>MY FRIENDS TUBE</h1>
+			<img src="./img/littletube.JPG" alt="" width="250" class="ltube">
+			<a href="#!" class="btn btn-outline-info add">친구 추가
+				<i class="fas fa-user-plus"></i>
+			</a>
+		</div>
+		<div class="search">
+			<input type="text" class="form-control" placeholder="SEARCH" ng-model="searchT">
+		</div>
+		<div class="list table-hover" ng-controller="myFriends">
+			<table class="table">
+				<thead class="table-info">
+					<tr>
+						<th>NO</th>
+						<th>NAME</th>
+						<th>CITY</th>
+						<th>PHONE</th>
+						<th>EMAIL</th>
+						<th>ETC</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="f in friends | filter:search">
+						<td>{{ f.id }}</td>
+						<td>{{ f.name }}</td>
+						<td>{{ f.city }}</td>
+						<td>{{ f.phone }}</td>
+						<td>{{ f.email }}</td>
+						<td>
+							<a class="edit" href="{{ f.id }}"><i class="fas fa-pen-nib"></i></a>
+							<a class="remove" href="{{ f.id }}"><i class="fas fa-trash-alt"></i></a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div> <!-- .list -->
+	</div> <!-- .container -->
+	<!-- popup -->
+	<div id="write-box" style="display: none;">
+		<form onsubmit="return false;">
+			<div class="form-group">
+				<input type="text" id="name" placeholder="NAME" class="form-control">
+			</div>
+			<div class="form-group">
+				<input type="text" id="city" placeholder="CITY" class="form-control">
+			</div>
+			<div class="form-group">
+				<input type="text" id="phone" placeholder="PHONE" class="form-control">
+			</div>
+			<div class="form-group">
+				<input type="text" id="email" placeholder="EMAIL" class="form-control">
+			</div>
+			<input type="hidden" id="id">
+			<input type="hidden" id="mode">
+			<a href="#!" class="btn btn-light btn-close">창닫기</a>
+			<a href="#!" class="btn btn-light btn-save">친구 등록</a>
+		</form>
+	</div> <!-- #write-box -->
+	<script>
+		var app = angular.module("myApp", []);
+		app.controller("myFriends", function ($scope, $http) {
+			$http.get("./api/friend").then(function (res) {
+				$scope.friends = res.data;
+			});
+		});
+
+		jQuery(".header").on("click", ".add", function (e) {
+			e.preventDefault();
+			init();
+			jQuery("#mode").val("add");
+			jQuery("#write-box").dialog({
+				width: 500,
+				heigth: 350,
+				title: "친구 추가",
+				model: true
+			});
+		});
+
+		jQuery(".list").on("click", ".edit", function (e) {
+			e.preventDefault();
+			var id = jQuery(this).attr("href");
+			if (!id) return;
+			jQuery.getJSON("./api/friend/" + id, function (res) {
+				if (!res[0]) return;
+				var friend = res[0];
+				init();
+				jQuery("#name").val(friend.name);
+				jQuery("#city").val(friend.city);
+				jQuery("#email").val(friend.email);
+				jQuery("#phone").val(friend.phone);
+				jQuery("#id").val(friend.id);
+				jQuery("#mode").val("update");
+				jQuery("#write-box").dialog({
+					width: 500,
+					heigth: 350,
+					title: "친구 수정",
+					model: true
+				})
+			});
+		});
+
+		jQuery(".list").on("click", ".remove", function (e) {
+			e.preventDefault();
+			var answer = confirm("정말 삭제하시겠습니까 ? ");
+			if (!answer) return;
+			var id = jQuery(this).attr("href");
+			if (!id) return;
+			jQuery.ajax({
+				url: "./api/friend/" + id,
+				method: "DELETE",
+				success: function (res) {
+					var result = jQuery.parseJSON(res);
+					if (result.delete == "true") {
+						alert("삭제를 성공했습니다");
+						location.reload();
+					} else {
+						alert("삭제를 실패했습니다");
+					}
+				}
+			})
+		});
+
+		jQuery(".btn-close").on("click", function (e) {
+			e.preventDefault();
+			jQuery("#write-box").dialog("close");
+		});
+
+		jQuery(".btn-save").on("click", function (e) {
+			e.preventDefault();
+			var mode = jQuery("#mode").val();
+			var data = {};
+			data.name = jQuery("#name").val();
+			data.city = jQuery("#city").val();
+			data.phone = jQuery("#phone").val();
+			data.email = jQuery("#email").val();
+			data.id = jQuery("#id").val();
+
+			if (mode == "add") addFriend(data);
+			else if (mode == "update") updateFriend(data);
+			else return;
+		});
+
+		function init() {
+			jQuery("#name").val("");
+			jQuery("#city").val("");
+			jQuery("#phone").val("");
+			jQuery("#email").val("");
+			jQuery("#id").val("");
+			jQuery("#mode").val("");
+		}
+
+		function addFriend(data) {
+			if (!data) return;
+			var api = "./api/friend";
+			jQuery.ajax({
+				url: api,
+				method: "POST",
+				data: data,
+				success: function (res) {
+					var result = jQuery.parseJSON(res);
+					if (result.name) {
+						alert("등록을 성공했습니다");
+						location.reload();
+					} else {
+						alert("등록의 실패했습니다");
+					}
+				}
+			});
+		}
+
+		function updateFriend(data) {
+			if (!data) return;
+			if (!data.id) return;
+			var api = "./api/friend/" + data.id;
+			jQuery.ajax({
+				url: api,
+				method: "PUT",
+				data: data,
+				success: function (res) {
+					var result = jQuery.parseJSON(res);
+					if (result.success == "true") {
+						alert("수정을 성공했습니다");
+						location.reload();
+					} else {
+						alert("변경된 내용이 없거나 실패했습니다");
+					}
+				}
+			});
+		}
+	</script>
+</body>
+</html>
