@@ -1,0 +1,66 @@
+*{margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; list-style: none; font-family: 'Oswald', sans-serif;}
+hr{border: 0; height: 1px; background: black;}
+#wrap { width: 1902px; min-height: 700px; margin: 0 auto;}
+html{width: 100%; min-width: 50%; height: 1500px;}
+header{width: 100%; height: 220px;}
+section{width: 100%; height: 2800px;}
+.menu{width: 100%; height: 60px; background-color: #f5e7df;}
+.menu p{text-align: center; line-height: 55px;}
+.nude{width: 100%; height: 100px; }
+.nude p{  font-size: 38px; text-align: center; margin-top: 30px;}
+.menubar{width: 100%; height: 50px; }
+.menubar nav .menubarul{width: 100%;   text-align: center; height: 50px;}
+.menubar nav .menubarul a li{display: inline-block; padding: 10px; height: 50px; transition: 1s; color:black;}
+.menubar nav .menubarul a li:hover{color:pink;}
+.imgbl{width: 1700px; height: 580px; border: 1px solid white;   margin: 50px auto; background-image: url('../img/blond.jpg'); background-repeat: no-repeat; background-size: cover;} 
+.imgbl p:first-child{text-align: center; margin-top: 230px; font-size: 1.4em; color:#615b5c;}
+.imgbl p:nth-child(2){font-size: 40px; text-align: center; margin-top: 40px; color:#615b5c;}
+.imgbl p:nth-child(3){width: 100%; text-align: center; margin-top: 20px; color:#615b5c;}
+.imgbl p:nth-child(3) a { transition: 1s; color:#615b5c;}
+.imgbl p:nth-child(3) a:hover{color:pink;}
+.see{width: 1700px; height: 580px;  margin: 0 auto;}
+.you{width: 800px; height: 580px;   background-image: url('../img/see.jpg'); background-repeat: no-repeat; background-size: cover; display: inline; float: left;} 
+.you p:first-child{text-align: center; margin-top: 200px; color:white; font-size: 24px; }
+.you p:nth-child(2){text-align: center; font-size: 35px; color:white; margin-top: 40px;} 
+.you p:nth-child(3){text-align: center; font-size: 17px; color:white; margin-top: 20px;}
+.ho{width: 800px; height: 580px;   background-image: url('../img/white.jpg'); background-repeat: no-repeat; background-size: cover; float: right;}
+.ho p:first-child{text-align: center; margin-top: 200px; font-size: 24px; color:#615b5c;} 
+.ho p:nth-child(2){text-align: center;  margin-top: 40px; font-size: 35px; color:#615b5c;}
+.ho p:nth-child(3){text-align: center;  font-size: 17px; margin-top: 20px; color:#615b5c;} 
+.ho p:nth-child(3) a{color:black; transition: 1s;}
+.ho p:nth-child(3) a:hover{color:pink;}
+.lip{width: 1700px; height: 553px;  margin: 0 auto; margin-top: 60px; }
+.hello{width: 500px; height: 550px;  float: left; text-align: center;}
+.nice{width: 480px; height: 550px;  float: right; text-align: center;}
+.meet{width: 480px; height: 550px;  float: right; text-align: center; margin-right: 130px;}
+.im{width: 1700px; height: 540px;  margin: 0 auto; }
+.my{width: 650px; height: 540px;   background-image: url('../img/pink.jpg'); background-repeat: no-repeat; background-size: cover;  float: left;}
+.my p:first-child{text-align: center; margin-top: 200px; font-size: 20px; color:#615b5c;}
+.my p:nth-child(2){text-align: center; margin-top: 50px; font-size: 30px; color:#615b5c;}
+.my p:nth-child(3){text-align: center; margin-top: 50px; color:#615b5c;}
+.my p:nth-child(3) a{color:#615b5c; transition: 1s;}
+.my p:nth-child(3) a:hover{color:pink;}
+.name{width: 1000px; height: 540px;   background-image: url('../img/pink-next.jpg'); background-repeat: no-repeat; background-size: cover; float: right;}
+.name p:first-child{margin-left: 70px; font-size: 20px; margin-top: 200px; color:#615b5c;}
+.name p:nth-child(2){margin-left: 70px; font-size: 30px; margin-top: 25px; color:#615b5c;}
+.name p:nth-child(3){margin-left: 115px; margin-top: 25px; color:#615b5c;}
+.name p:nth-child(3) a{color:#615b5c; transition: 1s;}
+.name p:nth-child(3) a:hover{color:pink;}
+.join{width: 1700px; height: 150px;  margin: 0 auto; border: 1px solid white;}
+.join .me p{text-align: center; margin-top: 53px; font-size: 30px; color:#615b5c;}
+.last{width: 1700px; height: 270px;  margin: 0 auto; margin-bottom: 120px; }
+.wr{width: 1800px; height: 270px;}
+.last .thing nav ul li{display: inline-block; padding: 2.4px; margin-top: 10px;}
+.email{width: 100%; height: 300px; }
+.wowd{width: 1000px; height: 240px;  margin: 0 auto;  margin-top: 45px;}
+.send{width: 499px; height: 220px;  border-right: 1px solid black;  float: left;}
+.send p:first-child{font-size: 20px;}
+.send .ins{border-bottom: 1px solid black; margin-top: 20px; width: 370px;}
+.send .ins input{ line-height: 30px; border: none; margin-left: 20px; font-size: 1em;}
+.gg{width: 499px; height: 240px;   float: right;} 
+.send p:nth-child(3){border: 1px solid black; width: 370px; height: 40px; margin-top: 30px; text-align: center; line-height: 35px; font-size: 18px;}
+.send p:nth-child(4){margin-top: 40px;}
+.qwe{width: 100%; height: 30px; text-align: center; margin-top: 60px;}
+.qwe p{display: inline-block; word-spacing: 100px; font-size: 17px;}
+.qwe1 p{display: inline-block; word-spacing: 60px; font-size: 17px; margin-top: 30px;}
+.qwe2 p{display: inline-block; word-spacing: 80px; font-size: 17px; margin-top: 30px;}
