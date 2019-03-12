@@ -1,0 +1,249 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+header {
+	width: 100%;
+	height: 90px;
+	background-color: white;
+}
+
+#header2 {
+	width: 100%;
+	height: 90px;
+	position: fixed;
+	background-color: white;
+}
+
+#head {
+	width: 1750px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+#head img {
+	margin: 10px 0px;
+	width: 250px;
+	height: 70px;
+}
+
+nav {
+	width: 550px;
+	height: 100px;
+	float: right;
+}
+
+nav ul {
+	width: 530px;
+	height: 80px;
+	margin: 10px;
+	text-align: center;
+}
+
+nav ul li {
+	width: 100px;
+	display: inline-block;
+	line-height: 70px;
+}
+
+nav ul li:nth-child(1) > a {
+	color: black;
+}
+
+nav ul li a {
+	display: block;
+	color: #AF9453;
+}
+
+section {
+	width: 100%;
+	height: 3480px;	
+}
+
+#backgroundimage {
+	width: 100%;
+	height: 1000px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../img/backgroundimage1.png');
+}
+
+.in_text {
+	width: 800px;
+	height: 250px;
+	margin: 0 auto;
+	padding: 200px 0px;
+	text-align: center;
+	font-size: 50px;
+	line-height: 1.59em;
+	letter-spacing: 0.3em;
+	font-family: eb garamond,serif;
+	color: white;
+	font-weight: bold;
+}
+
+#second_box {
+	width: 100%;
+	height: 600px;
+	margin: 0 auto;
+	padding: 4%;
+}
+
+.SERVICES {
+	width: 580px;
+	height: 580px;
+	background-color: #af9453;
+	float: left;
+	margin-right: 4%;
+	line-height: 2.1em;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+}
+
+.SERVICES > span{
+	margin-top: 20%;
+	display: block;
+	letter-spacing: 0.43em;
+}
+
+.SERVICES > p {
+	line-height: 2em;
+	font-size: 20px;
+	letter-spacing: 0.1em;
+}
+
+.SERVICES > button {
+	margin-top: 10%;
+	width: 260px;
+	height: 50px;
+	background: none;
+	border: 1px solid white;
+	color: white;
+	font-size: 15px;
+	transition: 0.2s;
+}
+
+.SERVICES button > a {
+	width: 260px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	color: white;
+}
+
+.SERVICES button:hover {
+	background-color: white;
+}
+
+
+.SERVICES button:hover > a {
+	color: #af9453;
+}
+
+.photo1 {
+	width: 1080px;
+	height: 580px;
+	float: left;
+	background-image: url('../img/photo1.PNG');
+	background-size: cover;
+}
+
+#third_box {
+	width: 900px;
+	height: 400px;
+	margin: 5% auto;
+	border: 1px solid black;
+	text-align: center;
+}
+
+#third_box p {
+	margin: 30px 0;
+	letter-spacing: 0.08em;
+	line-height: 1.5em;
+	font-size: 40px;
+}
+
+#third_box p:nth-child(3) {
+	font-size: 15px;
+	color: #af9453;
+}
+
+#fourth_box {
+	width: 1750px;
+	height: 710px;
+	margin: 0 auto;
+	background-image: url('../img/photo2.PNG');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin-bottom: 5%;
+}
+
+.fourth_box_in {
+	margin: 60px;
+	width: 580px;
+	height: 580px;
+	background-color: #af9453;
+	float: right;
+	text-align: center;
+	line-height: 2.1em;
+	letter-spacing: 0.27em;
+	font-size: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: eb garamond,serif;
+}
+
+.fourth_box_in > span{
+	margin-top: 20%;
+	display: block;
+	letter-spacing: 0.43em;
+}
+
+.fourth_box_in > p {
+	line-height: 2em;
+	font-size: 20px;
+	letter-spacing: 0.1em;
+}
+
+.fourth_box_in > button {
+	margin-top: 10%;
+	width: 260px;
+	height: 50px;
+	background: none;
+	border: 1px solid white;
+	color: white;
+	font-size: 15px;
+	transition: 0.2s;
+}
+
+.fourth_box_in button > a {
+	width: 260px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	color: white;
+}
+
+.fourth_box_in button:hover {
+	background-color: white;
+}
+
+
+.fourth_box_in button:hover > a {
+	color: #af9453;
+}
+
+footer {
+	width: 1750px;
+	height: 200px;
+	margin: 0 auto;
+	background-color: #af9453;
+}
