@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index2.css">
+    <style>
+        *{margin: 0; padding: 0;}
+        html,body{width: 100%; height: 100%;}
+        .container{width: 70%; height: 100%; margin: 0 auto; background: snow}
+        .box{max-width: 900px;  height: 300px; margin: 0 auto; margin-bottom: 3px; display: flex;}
+
+        .imgbox{width: 50%;}
+        .textbox{width: 50%; text-align: center; line-height: 150px;}
+        .imgbox img{min-width: 380px; max-width: 380px; height: 300px;}
+
+
+        @media(max-width: 1400px){
+            .textbox{font-size: 12px;}
+        }
+        @media(max-width: 1200px){
+            .textbox{font-size: 10px;}
+        }
+        @media(max-width: 1050px){
+            .textbox{font-size: 9px;}
+        }
+        @media(max-width: 950px){
+            .textbox{display: none;}
+            .box{width: 300px;}
+            .imgbox{width: 100px;}
+        }
+.box:hover{box-sizing: border-box; border: 1px solid #000;}
+
+    </style>
+</head>
+<body>
+
+    <header id="header_site" class="site_header">
+        <div class="logo">
+            <a href="index.html"><img src="./img/logo2.jpg" alt=""></a>
+        </div>
+
+        <div class="menubar">
+            <a href="https://m.map.naver.com/search2/search.nhn?query=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EB%9E%91%EA%B5%AC&sm=hty&style=v5#/map" target="_blank"><img src="./img/headmap.jpg" alt="" title="위치보기"></a>
+            <a href="./index1.html"><img src="./img/headfood.jpg" alt="" title="메뉴보기"></a>
+            <a href="https://www.facebook.com/profile.php?id=100015472840114" target="_blank"><img src="./img/headsns.jpg" alt="" title="페이스북보기"></a>
+        </div>
+    </header>
+
+
+    <div class="container">
+
+       
+<div class="line" style="width: 100px; height: 100px;"></div>
+
+        <div class="box">
+            <div class="imgbox"><img src="./img/tang.jpg" alt=""></div>
+            <div class="textbox"><h1>완전 찹쌀 탕수육</h1><p>겉은 바삭 속은 쫄깃. 식감을 바로잡았다!!</p> </div>
+        </div>
+        <div class="box">
+            <div class="imgbox"><img src="./img/slideimg5.jpg" alt=""></div>
+            <div class="textbox"><h1>착한 매운맛 떡볶이</h1><p>한국인의 입맛을 사로잡은 그 맛!</p></div>
+        </div>
+        <div class="box">
+            <div class="imgbox"><img src="./img/slideimg.jpg" alt=""></div>
+            <div class="textbox"><h1>국물이 진한 우동</h1><p>깊은 가쓰오부씨의 맛이 담겨있다!!</p></div>
+        </div>
+        <div class="box">
+            <div class="imgbox"><img src="./img/slideimg4.jpg" alt=""></div>
+            <div class="textbox"><h1>옛날 참치마요 비빔주먹밥</h1><p>집에서도 따라할 수 있어보이지만 정작 해보면 맛이 다른 그 주먹밥</p></div>
+        </div>
+        <div class="box">
+            <div class="imgbox"><img src="./img/nolsoop.jpg" alt=""></div>
+            <div class="textbox"><h1>착한 순한맛 크림떡볶이</h1><p>이제 우리도 이탈리아를 즐겨보자 우예에</p></div>
+        </div>
+        <div class="box">
+            <div class="imgbox"><img src="./img/dwdetruetruebg.png" alt=""></div>
+            <div class="textbox"><h1>앗 뜨거라 불고기 비빔밥</h1><p>역시 한국인은 밥심이지</p></div>
+        </div>
+        <footer style="text-align: center;">
+            <h2>2020년 1월 겨울방학 | 웹 개발 연습 | 제작자 : 김민후</h2><br>
+            <h2>COPYRIGHT &copy;; 2020 WEBSKILL DIGITECH MINHOO THANKYOU.</h2>
+        </footer>
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+/* all */
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-weight: normal;
+  font-family: 'Nanum Gothic', sans-serif !important;
+  box-sizing: border-box;
+}
+li {list-style: none;}
+a {text-decoration: none;}
+.ui-field-contain {
+  margin: 0;
+  padding: 0;
+}
+.global_header > .header > h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  padding: 12.5px 0;
+}
+.global_header > .header > h3 > a {
+  color: #fff;
+}
+.global_header > .header > span > a path {
+  color: #fff !important;
+}
+.global_header > .header > .back {
+  float: left;
+  margin: 15px 20px;
+  font-size: 18px;
+}
+.global_header > .header > .lan {
+  float: right;
+  margin: 15px 20px;
+  font-size: 18px;
+}
+.global_header > .header > .navbar > ul > li > a {
+  font-weight: normal;
+  font-size: 16px;
+  padding: 6px 0;
+}
+.global_header > .content > ul > li > a > img { 
+  width: 50px;
+  height: 50px;
+  margin: 17.5px;
+}
+.global_header > .content > ul > li > a > h3 {
+  color: #333;
+}
+.global_header > .content >.hide {
+  width: 100%; 
+  height: 470px;
+}
+
+/* all - popup */
+
+#popupBasic {
+  padding: 30px 20px;
+  width: 300px;
+  height: 300px;
+}
+#popupBasic > img {
+  margin: 0 50px 30px 50px;
+}
+#popupBasic > .popup_msg {
+  width: 200px;
+  height: 50px;
+  float: left;
+  border-right: 2px solid #cecece;
+}
+#popupBasic > .popup_msg > h4 {
+  width: 200px;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 3px 0;
+  padding-right: 10px;
+}
+#popupBasic > .popup_speak {
+  float: right;
+  width: 50px;
+  height: 50px;
+  padding: 7.5px;
+}
+#popupBasic > .popup_speak > img {
+  cursor: pointer;
+}
+.ui-popup-screen {
+  background-color: #000 !important;
+  opacity: 0.8 !important;
+}
+
+/* index.php */
+
+#index > .content > .pictogram_wrap {
+  width: 320px;
+  height: 540px;
+  margin: 0 auto;
+}
+#index > .content > .pictogram_wrap > .pictogram_cell {
+  width: 130px;
+  height: 160px;
+  float: left;
+  margin: 10px 15px;
+}
+#index > .content > .pictogram_wrap > .pictogram_cell > a {
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+}
+#index > .content > .pictogram_wrap > .pictogram_cell > a > p {
+  text-align: center;
+  margin-top: 10px;
+}
+#index > .content > .pictogram_wrap > .pictogram_cell > a > .pictogram_icon {
+  width: 130px;
+  height: 130px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #f2f2f2; 
+}
+#index > .content > .pictogram_wrap > .pictogram_cell > a > .pictogram_icon > img {
+  width: 80px;
+  height: 80px;
+}
+
+/* emergency.php */
+
+#emergency > .content > .station{
+  width: 280px;
+  height: 300px;
+  margin: 12.5vh auto;
+}
+#emergency > .content > .station > .fireStation,
+#emergency > .content > .station > .policeStation {
+  width: 280px;
+  height: 150px;
+  padding: 15px;
+}
+#emergency > .content > .station > .fireStation > a,
+#emergency > .content > .station > .policeStation > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#emergency > .content > .station > .fireStation > a > img,
+#emergency > .content > .station > .policeStation > a > img {
+  width: 120px;
+  height: 120px;
+  float: left;
+}
+#emergency > .content > .station > .fireStation > a > h1,
+#emergency > .content > .station > .policeStation > a > h1 {
+  float: left;
+  font-size: 54px;
+  font-weight: bold; 
+}  
+#emergency > .content > .station > .fireStation > a > h1 {
+  margin: 20px 0px 20px 30px;
+  border-bottom: 5px solid rgb(231, 76, 60);
+}
+#emergency > .content > .station > .policeStation > a > h1 {
+  margin: 20px 0px 20px 30px;
+  border-bottom: 5px solid rgb(52, 152, 219);
+}
+
+/* hospital_four.php */
+
+#hospital_four > .content > ul > li > img {
+  width: 60px;
+  height: 60px;
+  margin: 13px;
+}
+
+/* map.php */
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+.iwContent {
+  padding: 10px; 
+  text-align: center;
+}
+.iwContent > .iwContent_title {
+  width: 100%;
+  height: 20px;
+  margin: 10px 0;
+  color: #333;
+  font-weight: 100;
+  font-size: 14px;
+  overflow: hidden;
+  text-align: center;
+}
+.iwContent > .iwContent_call {
+  color: #333;
+  font-weight: 100;
+  margin: 0 0 10px;
+  text-align: center;
+}
+.iwContent > .btn {
+  min-width: 54px;
+  height: 34px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 14px;
+}
+.iwContent > .btn-default {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.iwContent > .btn-default > a {
+  color: #333 !important;
+}
+.iwContent > .btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border: 1px solid #2e6da4;
+}
+.iwContent > .btn-primary > a {
+  color: #fff !important;
+  font-weight: 100;
+}
+
+/* translation.php */
+
+#translation > .content {
+  position: fixed;
+  width: 100%;
+  height: calc(100% - 150px);
+}
+#translation > .content > form {
+  width: 100%;
+  height: 100%;
+}
+#translation > .content > form > div {
+  width: 100%;
+  height: calc(calc(100% / 2) - 35px);
+}
+#translation > .content > form input {
+  width: 100%;
+  height: 100%;
+}
+#btn-mic, #btn-tts {
+  width: 46% !important;
+  height: 45px;
+  float: left;
+}
+#btn-mic svg, #btn-tts svg {
+  font-size: 16px;
+}
+
+/*------------------------------------------------*/
+
+/*-------------------- Tablet --------------------*/
+
+/*------------------------------------------------*/
+
+@media screen and (min-width: 580px) { 
+  
+  /* all - popup */
+  
+  #popupBasic {
+    width: 400px;
+    height: 400px;
+    padding: 40px 30px;
+  }
+  #popupBasic > img {
+    width: 200px; 
+    height: 200px;
+    margin: 0px 70px 40px 70px;
+  }
+  #popupBasic > .popup_msg {
+    float: left;
+    width: 255px;
+    height: 80px;
+    border-right: 2px solid #cecece;
+  }
+  #popupBasic > .popup_msg > h4 {
+    width: 255px;
+    height: 25px;
+    margin: 10px 0;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  #popupBasic > .popup_speak {
+    float: right;
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+  }
+  #popupBasic > .popup_speak > img {
+    width: 50px; 
+    height: 50px;
+    cursor: pointer;
+  }
+  .ui-popup-screen {
+    background-color: #000 !important;
+    opacity: 0.8 !important;
+  }
+  
+  /* index.php */
+  
+  #index > .content > .pictogram_wrap {
+    width: 540px;
+    height: 870px;
+    margin: 20px auto;
+  }
+  #index > .content > .pictogram_wrap > .pictogram_cell {
+    width: 200px;
+    height: 290px;
+    float: left;
+    margin: 0 35px;
+    padding: 17.5px 0;
+  }
+  #index > .content > .pictogram_wrap > .pictogram_cell > a {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+  }
+  #index > .content > .pictogram_wrap > .pictogram_cell > a > p {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  #index > .content > .pictogram_wrap > .pictogram_cell > a > .pictogram_icon {
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+    border-radius: 15px;
+  }
+  #index > .content > .pictogram_wrap > .pictogram_cell > a > .pictogram_icon > img {
+    width: 120px; 
+    height: 120px;
+  } 
+  
+  /* emergency.php */
+  
+  #emergency > .content > .station {
+    width: 500px;
+    height: 560px;
+    margin: 16.5vh auto;
+  }
+  #emergency > .content > .station > .fireStation,
+  #emergency > .content > .station > .policeStation {
+    width: 500px;
+    height: 280px;
+    margin: 0 auto;
+    padding: 40px 40px;
+  }
+  #emergency > .content > .station > .fireStation > a,
+  #emergency > .content > .station > .policeStation > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  #emergency > .content > .station > .fireStation > a > img,
+  #emergency > .content > .station > .policeStation > a > img {
+    width: 200px;
+    height: 200px;
+    float: left;
+  }
+  #emergency > .content > .station > .fireStation > a > h1,
+  #emergency > .content > .station > .policeStation > a > h1 {
+    float: left;
+    font-size: 80px;
+    font-weight: bold;
+    padding: 0 10px; 
+  }  
+  #emergency > .content > .station > .fireStation > a > h1 {
+    margin: 40px 0px 40px 50px;
+    border-bottom: 7px solid rgb(231, 76, 60);
+  }
+  #emergency > .content > .station > .policeStation > a > h1 {
+    margin: 40px 0px 40px 50px;
+    border-bottom: 7px solid rgb(52, 152, 219);
+  }
+
+  /* translation.php */
+
+  #translation > .content > form input {
+    width: 100%;
+    height: 350px;
+    font-size: 40px;
+  }
+  #btn-mic, #btn-tts {
+    width: 48% !important;
+    height: 45px;
+    float: left;
+  }
+  #btn-mic svg, #btn-tts svg {
+    font-size: 20px;
+  }
+
+}
+
+/*------------------------------------------------*/
+
+/*---------------------- PC ----------------------*/
+
+/*------------------------------------------------*/
+
+@media screen and (min-width: 1024px) { 
+  
+  /* index.php */
+  
+  #index > .content > .pictogram_wrap {
+    width: 750px;
+    height: 500px;
+    margin: 30px auto;
+  }
+  #index > .content > .pictogram_wrap > .pictogram_cell {
+    width: 180px;
+    height: 250px;
+    margin: 0 35px;
+    padding: 15px 0;
+  }
+  #index > .content > .pictogram_wrap > .pictogram_cell > a {
+    width: 180px;
+    height: 180px;
+  }
+  #index > .content > .pictogram_wrap > .pictogram_cell > a > p {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  #index > .content > .pictogram_wrap > .pictogram_cell > a > .pictogram_icon {
+    width: 180px;
+    height: 180px;
+    padding: 40px;
+  }
+  #index > .content > .pictogram_wrap > .pictogram_cell > a > .pictogram_icon > img {
+    width: 100px; 
+    height: 100px;
+  } 
+ 
+  /* emergency.php */
+  
+  #emergency > .content > .station {
+    margin: 4.5vh auto;
+  }     
+}
